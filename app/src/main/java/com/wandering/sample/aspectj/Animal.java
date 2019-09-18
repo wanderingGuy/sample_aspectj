@@ -1,7 +1,6 @@
 package com.wandering.sample.aspectj;
 
 import android.util.Log;
-import hugo.weaving.DebugLog;
 
 public class Animal {
     private static final String TAG = "Animal";
@@ -16,5 +15,10 @@ public class Animal {
 
     public int getName(String name) {
         return name.length();
+    }
+
+    public boolean setAge(int age) {
+        Log.e(TAG, "setAge age:" + age);
+        return true;
     }
 }

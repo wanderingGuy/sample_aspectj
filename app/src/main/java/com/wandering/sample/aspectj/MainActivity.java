@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "11 onclick exe...v:" + v);
             }
         });
+
+        animal.setAge(10);
+
     }
 
 }
